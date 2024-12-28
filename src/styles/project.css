@@ -1,0 +1,130 @@
+header {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgba(0, 0, 0, 0.3); */
+    background-image: none;
+}
+
+header a, header button {
+    color: white;
+    font-size: 1rem;
+}
+
+nav ul{
+    color: white;
+}
+
+main #hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:linear-gradient(to top left,#0D0F12,#039717,#0D0F12);
+    font-size: 5vw;
+    /* letter-spacing: 0.5vw; */
+
+}
+
+#hero span {
+    transform: translateY(20px) scale(1);
+    opacity: 0;
+    animation: revealText 3s ease-in-out infinite alternate;
+}
+
+#hero span:nth-child(n){
+    animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes revealText {
+    0% {
+        opacity: 0;
+        /* transform: scale(1,1); */
+        transform: translateY(20px) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        /* transform: scale(3,3); */
+        transform: translateY(10%) scale(2) rotate(90deg);
+    }
+
+    100%{
+        opacity: 1;
+        /* transform: scale(1,1); */
+        transform: translateY(0) scale(1);
+    }
+}
+
+main #hero img{
+    position: relative;
+    top: 0;
+    max-height: 100vh;
+    width: 100vw;
+}
+
+.project {
+    object-fit: contain;
+    /* padding: 100px 100px 100px 100px; */
+    padding: 5px;
+    max-width: 360px;
+    height: 450px;
+    /* box-shadow: 0px 0px 10px rgb(25, 26, 25); */
+    border-radius: 15px 15px 10px 10px;
+    background-color: #10741d;
+    box-sizing: border-box;
+
+}
+
+.project:hover {
+    transition: transform ease-in-out 500ms;
+    transform: scale(0.95,0.95);
+    opacity: 0.7;
+}
+
+.project img{
+    width: 350px;
+    height: 250px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.project-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    width: 94%;
+}
+
+.project-header h2,.project-header span{
+    font-size: 1.5rem;
+    /* font-size: 2rem; */
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* gap: 20px; */
+    justify-items: center;
+    padding: 150px;
+}
+
+.project:nth-child(2n) {
+    margin-top: 300px;
+}
+
+.project-section a{
+    text-decoration: none;
+    color: white;
+}
+
+.project-description {
+    margin: 5px 10px;
+}
+
+

@@ -1,0 +1,40 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1{
+    font-size: 2rem;
+    margin-top: 20vh;
+    margin-bottom:0px;
+}
+
+main p {
+    margin-top: 2vh;
+    font-size: 1.5rem;
+}
+
+main article {
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    color:#0e881f;
+    cursor: pointer;
+}
+
+main article h2:hover {
+    transition: transform ease-in-out 500ms;
+    transform: scale(1.1,1.1) translate(5%);
+
+}
+

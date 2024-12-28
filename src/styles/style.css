@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'wotfard';
+    src: url('../Fonts/Wotfard-Regular-webfont/wotfard-regular-webfont.woff2') format('woff2'),
+        url('../Fonts/Wotfard-Regular-webfont/wotfard-regular-webfont.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: "wotfard",Arial, Helvetica, sans-serif;
+    background-color: #0D0F12;
+    color: white;
+}
+
+header {
+    box-sizing: border-box;
+    display : flex;
+    justify-content: space-between;
+    padding:20px 20px ;
+    background-image:linear-gradient(45deg,#0D0F12,#039717);
+}
+
+header a{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color:white;
+    /* color: black; */
+}
+
+header div a {
+    color : #14A728;
+}
+
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+header button{
+    /* width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    cursor: pointer;
+    */
+    visibility: hidden;
+} 
+
+footer {
+    margin-top: 100px;
+    /* background-color: rgb(216, 216, 216); */
+    /* background-color: #039717; */
+    background-image:linear-gradient(45deg,#0D0F12,#039717);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80vw;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* color: #333; */
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 50px;
+}
+
+#contacts ul {
+    display: grid;
+    gap : 10px;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    /* color: #555; */
+    color: white;
+
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    /* color: #14A728;  */
+    transition: color 0.3s;
+    color: white;
+}
+
+button {
+    background-color: #14A728;
+}
+
+header nav ul li:hover{
+    transition: transform ease-in-out 500ms;
+    transform: scale(1.3,1.3);
+}
+
+button:hover {
+    transition: transform ease-in-out 500ms;
+    transform: scale(1.1,1.1);
+}
+
+.footer-section ul li a:hover {
+    color: #000000;
+    transition: transform ease-in-out 500ms;
+    transform: scale(1.1,1.1);
+}
