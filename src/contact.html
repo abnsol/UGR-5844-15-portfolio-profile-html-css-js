@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/favicon.svg">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <title>contact me</title>
 </head>
-<body>
+<body> 
     <header>
         <div>
-            <a href="./index.html">abnsol</a>
+            <!-- <a href="./index.html">abnsol</a> -->
+            <a href="./index.html"><strong>ABNSOL</strong></a>
         </div>
         <nav>
             <ul>
@@ -28,15 +31,18 @@
         <section>
             <h2>Get in Touch</h2>
             <p>Have a question or project in mind? I'd love to hear about it. Fill out the form below to contact me.</p>
-            <form action="./contact.html" method="post">
-                <div>
-                    <label for="name">Name<span> *</span></label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="b3d966f1-d951-4250-a4a3-981ddedb7d08">
+                <div id="name-email">
+                    <div>
+                        <label for="name">Name<span> *</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-                <div>
-                    <label for="email">Email<span> *</span></label>
-                    <input type="email" id="email" name="email" required>
+                    <div>
+                        <label for="email">Email<span> *</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
                 </div>
 
                 <div>
@@ -49,7 +55,7 @@
                     <textarea id="message" name="message" required></textarea>
                 </div>
 
-                <button type="submit">Send Message</button>
+                <button type="submit"><strong>Send Message</strong></button>
             </form>
         </section>
     </main>
@@ -58,7 +64,7 @@
             <section class="footer-section" id="contacts">
                 <h3>Contacts</h3>
                 <ul>
-                    <li>Email : <a href="mailto:abnsoltibebe@gmail.com">abnsoltibebe@email.com</a></li>
+                    <li>Email : <a href="mailto:abnsoltibebe@gmail.com">abnsoltibebe@gmail.com</a></li>
                     <li>Phone : <a href="tel:+251974258080">+251-97-425-8080</a></li>
                 </ul>
             </section>
