@@ -1,9 +1,10 @@
 main {
     max-width: 50vw; 
-    margin: 100px auto;   
+    /* margin: 100px auto;    */
     padding: 2vw;   
     background-color: #20252c;
     border-radius: 20px;
+    font-size: 13px;
 }
 
 section {
@@ -16,7 +17,7 @@ span {
 
 h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 form div {
@@ -31,14 +32,14 @@ label {
 input, textarea {
     font-family: "wotfard",Arial, Helvetica, sans-serif;
     width: 100%;
-    padding: 10px;
+    padding: 1vh;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;  /* Include padding and border in element's total width and height */
 }
 
 textarea {
-    height: 200px;
+    height: 30vh;
     resize: none;
     overflow: auto;
 }
@@ -55,6 +56,7 @@ section button {
     border: none;
     border-radius: 5px;
     cursor: pointer; 
+    font-size: 13px;
 }
 
 #name-email {
@@ -71,3 +73,66 @@ section button {
         width: 300px;
     }
 }
+
+@media (max-width: 479px) {
+    /* Styles for phone portrait */
+    body{
+        background-color: #20252c;
+    }
+
+    main {
+        max-width: 100%;
+        margin: 0 0;
+        border-radius: 0px;
+        padding: 20px;
+    }
+
+    #name-email{
+        flex-direction: column;
+        gap: 30px;
+        & input{
+            width: 100%;
+        }
+        
+    }
+
+    form {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+/* Styles for phone landscape */
+    body{
+        background-color: #20252c;
+    }
+
+    main {
+        max-width: 80vw;
+        margin: 0 auto;
+        border-radius: 0px;
+        padding: 20px;
+    }
+
+    #name-email{
+        flex-direction: column;
+        gap: 30px;
+        & input{
+            width: 100%;
+        }
+        
+    }
+
+    form {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+/* Styles for tablet portrait */
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+/* Styles for tablet landscape */
+}
+  
