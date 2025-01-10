@@ -8,25 +8,31 @@
     <link rel="icon" href="./images/favicon.svg">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/about.css">
+    <script src="./scripts.js" defer></script>
 </head>
 <body>
     <header>
-        <div>
-            <!-- <a href="./index.html">abnsol</a> -->
-            <a href="./index.html"><strong>ABNSOL</strong></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Welcome</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./thoughts.html">Thoughts</a></li>
-                <li><a href="./contact.html">Get In Touch</a></li>
-            </ul>
-        </nav>
-        <button class="ham-button">
-            <img src="./images/menu.svg" alt="toggle menu">
-        </button>
+        <div class="header-content">
+                <!-- <a href="./index.html">abnsol</a> -->
+                <a class="logo" href="./index.html"><strong>ABNSOL</strong></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav_item"><a class="nav__link" href="./index.html">Welcome</a></li>
+                    <li class="nav_item"><a class="nav__link" href="./about.html">About</a></li>
+                    <li class="nav_item"><a class="nav__link" href="./projects.html">Projects</a></li>
+                    <li class="nav_item"><a class="nav__link" href="./thoughts.html">Thoughts</a></li>
+                    <li class="nav_item"><a class="nav__link" href="./contact.html">Get in Touch</a></li>
+                </ul>
+            </nav>
+            <!-- <button class="ham-button">
+                <img src="./images/menu.svg" alt="toggle menu">
+            </button> -->
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>  
     </header>
     <main>
         <article>
@@ -54,7 +60,7 @@
             I aspire to become a well-rounded software engineer capable of creating solutions that can make a global impact. 
             I’m excited to explore opportunities such as freelance work, internships, or collaborative projects that align with my passions.
             </p>
-            <button><strong><a href="./files/Resume.pdf" download="Abenezer-solomon.pdf" >Download My Resume <span class="material-symbols-outlined">
+            <button><strong><a href="./files/Resume.pdf" download="Abenezer-solomon.pdf" >Download Resume <span class="material-symbols-outlined">
                 picture_as_pdf
                 </span></a>
                 </strong></button>

@@ -17,11 +17,11 @@
                 <a class="logo" href="./index.html"><strong>ABNSOL</strong></a>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav_item"><a class="nav__link" href="./index.html">Welcome</a><hr></li>
-                    <li class="nav_item"><a class="nav__link" href="./about.html">About</a><hr></li>
-                    <li class="nav_item"><a class="nav__link" href="./projects.html">Projects</a><hr></li>
-                    <li class="nav_item"><a class="nav__link" href="./thoughts.html">Thoughts</a><hr></li>
-                    <li class="nav_item"><a class="nav__link" href="./contact.html">Get in Touch</a><hr></li>
+                    <li class="nav_item"><a class="nav__link" href="./index.html">Welcome</a></li>
+                    <li class="nav_item"><a class="nav__link" href="./about.html">About</a></li>
+                    <li class="nav_item"><a class="nav__link" href="./projects.html">Projects</a></li>
+                    <li class="nav_item"><a class="nav__link" href="./thoughts.html">Thoughts</a></li>
+                    <li class="nav_item"><a class="nav__link" href="./contact.html">Get in Touch</a></li>
                 </ul>
             </nav>
             <!-- <button class="ham-button">
@@ -35,30 +35,32 @@
         </div>  
     </header>
     <main>
-        <section>
+        <section class="contact-section">
             <h2>Get in Touch</h2>
             <p>Have a question or project in mind? I'd love to hear about it. Fill out the form below to contact me.</p>
             <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="b3d966f1-d951-4250-a4a3-981ddedb7d08">
-                <div id="name-email">
-                    <div>
-                        <label for="name">Name<span> *</span></label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div>
-                        <label for="email">Email<span> *</span></label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+                <input type="hidden" name="access_key" value="b3d966f1-d951-4250-a4a3-981ddedb7d08">                
+                <div>
+                    <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <p class="required"><span>*</span>&nbsp;Required</p>
                 </div>
 
                 <div>
-                    <label for="subject">Subject<span> *</span></label>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <p class="required"><span>*</span>&nbsp;Required</p>
+                    
+                </div>
+
+                <div>
+                    <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject" required>
+                    <p class="required"><span>*</span>&nbsp;Required</p>
                 </div>
 
                 <div>
-                    <label for="message">Message<span> *</span></label>
+                    <label for="message">Message</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
 
