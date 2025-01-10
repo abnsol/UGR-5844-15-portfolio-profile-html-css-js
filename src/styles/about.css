@@ -5,19 +5,19 @@ main {
 }
 
 main article {
-    max-width: 50vw;
+    max-width: 55vw;
     line-height: 40px;
     margin-top: 100px;
     background-color: #20252c;
     padding: 2vw;
     border-radius: 20px;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
+
 
 main article button {
     margin-top: 5vh;
-    color: white;
-    padding: 10px 20px;
+    padding: 20px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer; 
@@ -25,10 +25,11 @@ main article button {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #026400;
 
     & a{
         text-decoration: none;
-        color: white;
+        color: #f1f1f1;
     }
 
     span{
@@ -37,27 +38,48 @@ main article button {
         margin: 0;
     }
     & .material-symbols-outlined{
-        font-size: 20px;
+        font-size: 1rem;
         padding: 0;
         margin: 0;
     }
 }
 
 main article h1{
-    font-size: 40px;
+    /* font-size: 40px; */
     line-height: 50px;
+}
+
+main article ul{
+    /* list-style-type: none; */
+    padding: 1vmin 6vmin;
 }
 
 @media (max-width: 479px) {
     /* Styles for phone portrait */
+    body{
+        background-color: #20252c;
+    }
+    main article {
+        max-width: 100%;
+        /* margin: 0 auto; */
+        padding: 20px;
+        background-color: #20252c;
+        border-radius: 0px;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
 /* Styles for phone landscape */
+    main article {
+        max-width: 80vw;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
 /* Styles for tablet portrait */
+    main article {
+        max-width: 80vw;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
